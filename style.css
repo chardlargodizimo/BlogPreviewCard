@@ -1,0 +1,110 @@
+:root {
+    --ff-default: "Figtree", sans-serif;
+
+    --fw-regular: 500;
+    --fw-semibold: 650;
+    --fw-bold: 800;
+    --fw-black: 900;
+
+    --fs-200: 0.75rem;
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-grey: hsl(0, 0%, 50%);
+    --clr-neutral-dark: hsl(0, 0%, 7%);
+    --clr-primary-400: hsl(47, 88%, 63%);
+
+
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-default);
+    font-size: var(--fs-400);
+    background: var(--clr-primary-400);
+    color: var(--clr-neutral-dark);
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* utilities */
+.flow > * + * {
+    margin-top: var(--flow-space, 0.9375rem);
+}
+
+.flow--small {
+    --flow-space: 0.75rem;
+}
+
+.flex-group {
+    --flow-space: 1.35rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* general styling */
+.card {
+    width: min(87.20vw, 385px);
+    background: var(--clr-neutral-white);
+    margin-inline: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--clr-neutral-dark);
+    border-radius: 1.25rem;
+    box-shadow: 8px 8px var(--clr-neutral-dark);
+}
+
+.card__illustration {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.card__heading{
+    display: inline-block;
+    padding: 0.25em 1em;
+    background: var(--clr-primary-400);
+    border-radius: 0.3rem;
+}
+
+.card__image {
+    width: 35px;
+}
+
+/* typography */
+.fw-regular { font-weight: var(--fw-regular); }
+.fw-semibold { font-weight: var(--fw-semibold); } 
+.fw-bold { font-weight: var(--fw-bold); }
+.fw-black { font-weight: var(--fw-black); }
+.fs-200 { font-size: var(--fs-200); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-500 { font-size: var(--fs-500); }
+
+/* color */
+.clr-neutral-grey { color: var(--clr-neutral-grey); }
+
+
+
