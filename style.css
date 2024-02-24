@@ -80,6 +80,14 @@ img {
     border-radius: 0.75rem;
 }
 
+.card__link {
+    text-decoration: none;
+}
+
+.card__link:hover {
+    color: var(--clr-primary-400);
+}
+
 .card__heading{
     display: inline-block;
     padding: 0.25em 1em;
